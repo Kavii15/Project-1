@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 12vh;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navlist{
+    display: flex;
+    gap: 2rem;
+    
+
+}
+.navlist li{
+    list-style: none;
+    
+}
+.navlist a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: .08rem;
+}
+.hero{
+    display: flex;
+}
+.hero .left{
+    background-color: #2c1e1e;
+    padding-left: 3rem;
+    
+}
+.hero .right{
+    background-color: #7c573c;
+    justify-content:center;
+
+    
+}
+.hero .hero_split{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.navlist .slider{
+    background-color: rgba(255, 255,255, 0.345);
+    width: 6rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    right: 300px;
+    border-top: .3rem solid #2c1e1e;
+    border-radius: 0 0 2rem 2rem;
+    backdrop-filter: blur(.5rem);
+    z-index: -1;
+    transition: .5s ease-in-out;
+
+
+}
+.navlist li:nth-child(2):hover ~ .slider{
+    right: 215px;
+
+}
+.navlist li:nth-child(3):hover ~ .slider{
+    right: 110px;
+
+}
+.navlist li:nth-child(4):hover ~ .slider{
+    right: 1px;
+
+}
+
+.left .content{
+    color:white;
+}
+.content h1{
+    font-size: 5rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .04rem white;
+    letter-spacing: .3rem;
+    font-family: 'Lemon',cursive;
+}
+.content p{
+    color:rgba(255, 255, 255, 0.274);
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 1.3rem 0;
+    line-height: 1.7rem;
+}
+.content button{
+    background: radial-gradient(at top left,#5a4740, #2c1e1e) ;
+    padding: 1rem 3rem;
+    border: .2rem solid rgba(255, 255, 255, 0.285);
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 4rem;
+    letter-spacing: .1rem;
+
+}
+.content button:hover{
+    background: radial-gradient(at bottom right, #5a4740, #2c1e1e) ;
+}
+
+
+
+.section{
+    padding: 60px 5px;
+    text-align: center;
+    background-color: #7c573c;
+    margin: 0; 
+    border-radius: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height :100vh;
+    
+    
+    
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.menu-item{
+    margin: 20px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    background: #2c1e1e;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px #2c1e1e;; /* Soft shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+  
+}
+.menu-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+.menu-item img{
+    width: 50%;
+    height: 500;
+    margin:10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.menu-item h3{
+    font-size: 1rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .04rem white;
+    letter-spacing: .3rem;
+    font-family: ar;
+    margin-top: 10px;
+}
+
+
+
+
